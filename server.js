@@ -16,6 +16,9 @@ app.use(bodyParser.json());
 mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Welcome to the social media API');
+});
 app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);
 app.use('/api/friends', friendRoutes);
