@@ -2,11 +2,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const config = require('./config/config');
+const config = require('../config/config');
 
-const userRoutes = require('./routes/userRoutes');
-const postRoutes = require('./routes/postRoutes');
-const friendRoutes = require('./routes/friendRoutes');
+const userRoutes = require('../routes/userRoutes');
+const postRoutes = require('../routes/postRoutes');
+const friendRoutes = require('../routes/friendRoutes');
 
 const app = express();
 
